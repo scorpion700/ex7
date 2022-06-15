@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css\vklad.css">
+	<meta charset="utf-8">
+	<title>BankRU</title>
+</head>
+<body>
+<form action="cgi-bin/IntVklad.php" accept-charset="UTF-8">
+    <p><h1>Найти вклад на выгодных условиях</h1></p>
+    <p><div class="red"><b>Срок вклада</b>
+<select>
+	<option>1 мес</option>
+	<option>3 мес</option>
+	<option>6 мес</option>
+	<option>9 мес</option>
+	<option>1 год</option>
+	<option>1.5 года</option>
+</select>
+</div>
+</p>
+<p></p><b>Название вклада:</b>&nbsp;&nbsp;<input type="text" name="name"></p>
+<b>Капитализация:</b>&nbsp;&nbsp;<select>
+	<option>Да</option>
+	<option>Нет</option>
+</select>
+<br><br>
+<div class="green">
+	<b>Возможность пополнения:</b>
+</div>
+    <div class="ots">
+    <br>
+	<input type="radio" name="pop">Да
+	<br>
+	<input type="radio" name="pop">Нет
+    </div>
+<div class="blue">
+	<br><b>Досрочное расторжение вклада:</b>
+</div>
+    <div class="ots">
+    <br>
+	<input type="radio" name="rast">Да
+	<br>
+	<input type="radio" name="rast">Нет
+    </div> 
+	<b>Открытие on-line:</b>
+    <div class="ots">
+	<input type="radio" name="otk"> Да
+	<br>
+    <input type="radio" name="otk"> Нет
+    </div>
+	<br>
+    <button type="submit">Найти</button>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button type="reset" value="Reset form">Очистить</button>
+    <br><br><b>Спасибо за визит!</b>
+</form>
+</body>
+</html>
